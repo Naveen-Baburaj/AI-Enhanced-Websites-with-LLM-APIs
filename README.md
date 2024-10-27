@@ -65,6 +65,8 @@ The API is called with a dynamic prompt structured as follows:
 
 In this prompt, the user review is dynamically inserted, allowing the system to adapt to various feedback. The Gemini API processes the review text and returns a one-word sentiment classification: positive, negative, or neutral.
 
+![Screenshot of ChefBot in action](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss2.png)
+
 > **Figure:** Calling Gemini API using Bubble workflow for Sentiment Analysis
 
 ### Step 4: Storing the Sentiment Result
