@@ -50,6 +50,8 @@ To ensure the integrity of the reviews and maintain accountability, only logged-
 
 Once the user submits their review, the workflow creates a new element in the "Review" data type. This entry stores all relevant details, including the text of the review, the user’s name, and a timestamp indicating when the review was submitted. This organization ensures that all reviews are properly cataloged for sentiment analysis and future reference.
 
+![Screenshot](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss1.png)
+
 > **Figure:** Workflow for creating a new element in the Review Datatype
 
 ### Step 3: Calling the Gemini API for Sentiment Analysis
