@@ -81,4 +81,50 @@ The Admin Panel is updated in real time to reflect new reviews and their associa
 
 The **Sentiment Analysis** feature, implemented using the **Gemini API** within the **Bubble.io** platform, showcases how sentiment analysis can be seamlessly integrated into any website to enhance understanding of customer feedback and enable actions based on user insights.
 
+## Designing ChefBot – The Chatbot Powered by LLM
+
+The purpose of **ChefBot** was to serve as a virtual assistant that guided customers through their food ordering process. ChefBot provided real-time assistance, answered user queries, and supported customers throughout their ordering journey. The chatbot’s design focused on making the experience as helpful, friendly, and efficient as possible.
+
+### Implementation Approach Using Gemini API
+
+ChefBot was implemented using the **Gemini API**, integrated with the **Bubble** platform to provide intelligent conversational capabilities. This integration allowed ChefBot to deliver a more natural and engaging interaction for users.
+
+> **Figure:** The user asks a question about Liverpool Larder’s menu.
+
+### Bubble Workflow for ChefBot
+
+The ChefBot chatbot was developed to provide real-time assistance to users by answering questions about Liverpool Larder’s menu, including ingredients, pricing, and allergens.
+
+- **Step 1: User Query Initiation**  
+  Whenever a user types a question into the chat window, the workflow begins by preparing a prompt for the Gemini API. ChefBot uses a predefined prompt that includes current menu data, which is fetched dynamically from the database. This prompt is used for all questions to ensure consistency and accuracy.
+
+  **Prompt Template**:
+  > "You are an AI assistant named 'ChefBot' helping users with questions about Liverpool Larder cloud kitchen menu. Here is the current menu: [dynamic data which includes food name, price, ingredients]. Here is the user question: [the data filled by user in the input column]."
+
+  The prompt is dynamically updated with the latest data from the menu data type, ensuring all responses reflect the most recent information.
+
+- **Step 2: Call the Gemini API**  
+  Once the dynamic prompt is ready, ChefBot makes an API call to the Gemini API.
+
+  > **Figure:** Calling Gemini API using Bubble workflow for ChefBot
+
+  **API Workflow in Bubble**: ChefBot is connected to the Gemini API through a Bubble workflow. The prompt, containing both the user’s question and current menu details, is sent to the Gemini API for processing. The Gemini API uses **Natural Language Processing (NLP)** to analyze the prompt and generate an appropriate response based on the user’s question.
+
+- **Step 3: Receive and Display the Response**  
+  After processing the prompt, the Gemini API returns a response, which ChefBot then displays to the user. The generated response is delivered in real time, providing the user with information regarding their query—such as the price of a dish, its ingredients, or any allergens.
+
+- **Step 4: Handling Follow-Up Queries**  
+  If the user asks a follow-up question or rephrases their initial query, ChefBot handles the new question in the same way, using the same workflow. ChefBot uses the same prompt structure each time a new question is asked. The only changes are the specific question asked by the user and the latest menu data from the database. The new question, along with the current menu data, is sent back to the Gemini API using the same workflow, ensuring consistency across all responses. This loop continues as long as the user keeps asking questions, providing consistent, comprehensive answers based on the latest menu information.
+
+  > **Figure:** User interacting with ChefBot
+
+- **Step 5: Ending the Conversation**  
+  Once the user is satisfied and stops interacting with ChefBot, the chat window remains available for any further questions. Users can close or minimize the chat window at any time. ChefBot will be available if the user decides to ask further questions later on.
+
+---
+
+## Conclusion
+
+By leveraging **LLM APIs**, we can significantly enhance any website with minimal coding effort. This project demonstrated how to implement a **sentiment analysis tool** and a **chatbot**, transforming user interactions and feedback into valuable insights. However, the possibilities extend far beyond these examples. With the right dynamic prompts, LLM APIs can be utilized to create a wide range of intelligent, user-focused features, making websites more interactive, responsive, and valuable to their audiences.
+
 
