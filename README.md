@@ -22,6 +22,8 @@ Through the LLM-powered chatbot, users enjoy real-time, responsive interactions,
 
 The **Liverpool Larder** platform was developed entirely on **Bubble.io**, which allowed for rapid and adaptable web development without requiring extensive coding knowledge. The choice of Bubble.io as the development platform was made to enable quick prototyping, easy modifications, and efficient management of both front-end and back-end components.
 
+**Bubble Manual: https://manual.bubble.io/**
+
 ---
 
 ## Sentiment Analysis
