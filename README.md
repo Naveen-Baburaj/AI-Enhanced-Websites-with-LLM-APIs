@@ -10,6 +10,9 @@ Through the LLM-powered chatbot, users enjoy real-time, responsive interactions,
 
 **Liverpool Larder** is a sample food ordering website designed on **Bubble.io** to illustrate how **Large Language Model (LLM) APIs** can significantly enhance website interactions and functionality. This project utilizes the **Gemini API** to power **ChefBot**, an AI chatbot that assists users with personalized recommendations and answers to common queries, creating a seamless and interactive experience. Additionally, a **Sentiment Analysis System** analyzes user reviews to extract valuable feedback, helping the platform continuously improve its service.
 
+[Click here to go to the Liverpool Larder website](https://liverpool-larder.bubbleapps.io/version-test)
+
+
 
 **While the Gemini API is used here, similar results can be achieved with other LLM APIs, such as ChatGPT. These APIs offer versatile options for integrating intelligent features like chatbots, sentiment analysis, and personalized recommendations, making LLM technology an invaluable tool for enriching any website.**
 
