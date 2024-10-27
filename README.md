@@ -79,6 +79,10 @@ The Admin Panel is updated in real time to reflect new reviews and their associa
 - **Green** if the sentiment is positive, indicating satisfaction and positive feedback.
 - **Red** if the sentiment is negative, highlighting areas where attention may be needed.
 
+![Screenshot of ChefBot in action](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss3.png)
+![Screenshot of ChefBot in action](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss4.png)
+
+
 > **Figure:** The sentiment analysis page showing customer reviews. The top review was detected as positive, indicated by green, while the bottom review was classified as negative, indicated by red.
 
 ---
@@ -92,6 +96,8 @@ The purpose of **ChefBot** was to serve as a virtual assistant that guided custo
 ### Implementation Approach Using Gemini API
 
 ChefBot was implemented using the **Gemini API**, integrated with the **Bubble** platform to provide intelligent conversational capabilities. This integration allowed ChefBot to deliver a more natural and engaging interaction for users.
+
+![Screenshot of ChefBot in action](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss5.png)
 
 > **Figure:** The user asks a question about Liverpool Larder’s menu.
 
@@ -110,6 +116,8 @@ The ChefBot chatbot was developed to provide real-time assistance to users by an
 - **Step 2: Call the Gemini API**  
   Once the dynamic prompt is ready, ChefBot makes an API call to the Gemini API.
 
+  ![Screenshot of ChefBot in action](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss6.png)
+
   > **Figure:** Calling Gemini API using Bubble workflow for ChefBot
 
   **API Workflow in Bubble**: ChefBot is connected to the Gemini API through a Bubble workflow. The prompt, containing both the user’s question and current menu details, is sent to the Gemini API for processing. The Gemini API uses **Natural Language Processing (NLP)** to analyze the prompt and generate an appropriate response based on the user’s question.
@@ -119,6 +127,8 @@ The ChefBot chatbot was developed to provide real-time assistance to users by an
 
 - **Step 4: Handling Follow-Up Queries**  
   If the user asks a follow-up question or rephrases their initial query, ChefBot handles the new question in the same way, using the same workflow. ChefBot uses the same prompt structure each time a new question is asked. The only changes are the specific question asked by the user and the latest menu data from the database. The new question, along with the current menu data, is sent back to the Gemini API using the same workflow, ensuring consistency across all responses. This loop continues as long as the user keeps asking questions, providing consistent, comprehensive answers based on the latest menu information.
+
+![Screenshot of ChefBot in action](https://raw.githubusercontent.com/Naveen-Baburaj/AI-Enhanced-Websites-with-LLM-APIs/main/ScreenShots/ss7.png)
 
   > **Figure:** User interacting with ChefBot
 
