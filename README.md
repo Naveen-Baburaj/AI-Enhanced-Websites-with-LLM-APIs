@@ -1,4 +1,4 @@
-# AI-Enhanced Websites with LLM APIs
+# AI-Enhanced Bubble.io website with LLM APIs
 
 Leveraging **LLM APIs** is an effective way to transform standard websites into interactive, AI-driven platforms. In this project, we demonstrate how LLM APIs can be seamlessly utilised to create powerful features like a chatbot and a sentiment analysis system, adding intelligence and engagement to the website with ease.
 
